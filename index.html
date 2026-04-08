@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fintech Design Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="container">
+
+    <header>
+      <h1>Fintech Design Assistant</h1>
+      <p>Describe your financial product and get a full design concept instantly.</p>
+    </header>
+
+    <section class="input-section">
+      <textarea 
+        id="userInput" 
+        placeholder="e.g. A mobile budgeting app for Gen Z that helps track spending and set savings goals..."
+        rows="4"
+      ></textarea>
+      <button id="generateBtn">Generate Design Concept</button>
+    </section>
+
+    <section class="output-section" id="output" style="display:none;">
+
+      <div class="agent-card" id="researchCard">
+        <h2>🔍 Research & UX Analysis</h2>
+        <div class="agent-content" id="researchOutput">Working...</div>
+      </div>
+
+      <div class="agent-card" id="designCard">
+        <h2>🎨 Visual Design Direction</h2>
+        <div class="agent-content" id="designOutput">Waiting...</div>
+      </div>
+
+      <div class="agent-card" id="copyCard">
+        <h2>✍️ Interface Copy</h2>
+        <div class="agent-content" id="copyOutput">Waiting...</div>
+      </div>
+
+      <div class="agent-card" id="reviewCard">
+        <h2>✅ Design Review</h2>
+        <div class="agent-content" id="reviewOutput">Waiting...</div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
