@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #0a0f1e;
+    color: #e8eaf0;
+    font-family: 'Inter', -apple-system, sans-serif;
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+  
+  header p {
+    color: #8892a4;
+    font-size: 1rem;
+  }
+  
+  .input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+  
+  textarea {
+    width: 100%;
+    background: #111827;
+    border: 1px solid #1e293b;
+    border-radius: 12px;
+    color: #e8eaf0;
+    font-size: 0.95rem;
+    padding: 16px;
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  
+  textarea:focus {
+    border-color: #3b82f6;
+  }
+  
+  button {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  button:hover {
+    background: #2563eb;
+  }
+  
+  button:disabled {
+    background: #1e293b;
+    color: #4b5563;
+    cursor: not-allowed;
+  }
+  
+  .agent-card {
+    background: #111827;
+    border: 1px solid #1e293b;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .agent-card h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #93c5fd;
+  }
+  
+  .agent-content {
+    color: #8892a4;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    white-space: pre-wrap;
+  }
+  
+  .agent-content.active {
+    color: #e8eaf0;
+  }
